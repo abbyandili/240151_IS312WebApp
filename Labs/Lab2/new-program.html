@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Program</title>
+    <script>
+        function validateForm() {
+            // Get form values [cite: 30]
+            let code = document.forms["progForm"]["programCode"].value;
+            let name = document.forms["progForm"]["programName"].value;
+            
+            // Check if fields are empty [cite: 31, 32]
+            if (code == "" || name == "") {
+                alert("All fields must be filled out!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>Enter New Program Details</h2>
+    <form name="progForm" action="add-new-program.php" method="POST" onsubmit="return validateForm()">
+        <label>Program Code:</label><br>
+        <input type="text" name="programCode"><br><br>
+        
+        <label>Program Name:</label><br>
+        <input type="text" name="programName"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
