@@ -1,5 +1,5 @@
 <?php
-/* Author: [Your Name]
+/* Author: ABIGAIL ANDILI
 Date: 22nd March 2025
 Unit: IS312 Web Application Development
 */
